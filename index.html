@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="alura.css">
+    <title>SóBallet</title>
+</head>
+<header>
+    <div id="carrinho">
+        <button class="btnCarrinho" id="btnCarrinho">
+            <span id="contador">0</span>
+            <i class="fa fa-shopping-cart"></i>
+        </button>
+    </div>
+</header>
+<body>
+    <div id="carrinhoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <ul id="listaCarrinho"></ul>
+            <button id="btnFinalizarCompra">Finalizar Compra</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="titulo">SóBallet</h1>
+        <img id="imagem1" class="imagem1" src="F4EDF8F6-ADF5-4476-BCF0-8E4E01044CFC_4_5005_c.jpeg" alt="Imagem principal da loja">
+    </div>
+    <div class="container-pesquisa">
+        <h2>Adicione os itens ao seu carrinho!</h2>
+    </div>
+    <div class="container2">
+        <h2 class="texto-pequeno">Sapatilhas:</h2>
+        <h2 class="texto-pequeno">Collants:</h2>
+        <h2 class="texto-pequeno">Acessórios:</h2>
+    </div>
+    <div class="container2-img">
+        <img id="img-sapatilha" class="itens" src="/Users/at/Documents/programacao web/alura/amg sapatilha.png" alt="Sapatilha">
+        <img id="img-collant" class="itens" src="/Users/at/Documents/programacao web/alura/img collant.png" alt="Collant">
+        <img id="img-acessorios" class="itens" src="/Users/at/Documents/programacao web/alura/ img acess.png" alt="Acessórios">
+    </div>
+    <div class="addCarrinho">
+        <button onclick="adicionarAoCarrinho('Sapatilha', 199.99)" id="sapatilhaCarrinho" class="botaoAddItem">Adicionar ao Carrinho</button>
+        <button onclick="adicionarAoCarrinho('Collant', 99.99)" id="collantCarrinho" class="botaoAddItem">Adicionar ao Carrinho</button>
+        <button onclick="adicionarAoCarrinho('Acessorios', 10.00)" id="acessoriosCarrinho" class="botaoAddItem">Adicionar ao Carrinho</button>
+    </div>
+    <script src="alura.js"></script> 
+</body>
+</html>
